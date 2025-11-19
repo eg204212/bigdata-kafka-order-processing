@@ -50,7 +50,7 @@ def process_record(record):
     if random.random() < 0.05:
         raise RuntimeError("simulated transient processing error")
     # simulate a permanent error condition rarely
-    if random.random() < 0.01:
+    if random.random() < 0.05:
         raise ValueError("simulated permanent processing error")
     # processing successful
     return True
