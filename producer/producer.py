@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-Simple Kafka producer that serializes orders using Avro (fastavro) and publishes to a topic.
-
-Usage examples:
-  python producer.py --topic orders --count 100 --interval 0.5
-
-Configuration via CLI args: bootstrap server, topic, message count, interval.
-"""
 import argparse
 import json
 import random
